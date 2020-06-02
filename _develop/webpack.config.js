@@ -43,12 +43,9 @@ const jsRules = {
             {
               targets: {
                 browsers: [
-                  'last 2 Chrome major versions',
-                  'last 2 Firefox major versions',
-                  'last 2 Safari major versions',
-                  'last 2 Edge major versions',
-                  'last 2 iOS major versions',
-                  'last 2 ChromeAndroid major versions',
+                  "last 1 version",
+                  "> 1%",
+                  "not dead"
                 ],
               },
             },
@@ -88,7 +85,7 @@ const tsRules = {
           declaration: false,
           module: 'es6',
           sourceMap: true,
-          target: 'es6',
+          target: 'es5',
         },
         transpileOnly: true,
       },
